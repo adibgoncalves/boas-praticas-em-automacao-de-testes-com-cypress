@@ -21,8 +21,7 @@ describe('Unnecessary waiting bad practice', () => {
       .type(info.description)
     cy.get('input[type="submit"]')
       .click()
-    cy.wait(3000)
-
+      
     cy.url()
       .should(
         'be.equal',
